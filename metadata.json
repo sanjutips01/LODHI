@@ -1,0 +1,9 @@
+{
+  "name": "Lodhi",
+  "description": "Lodhi: A comprehensive platform connecting customers with skilled technicians for appliance repair, plumbing, and electrical services. Features separate dashboards for customers, technicians, and administrators.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "prompt": ""
+}
