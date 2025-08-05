@@ -1,23 +1,23 @@
 import React, { useState, useEffect } from 'react';
-import { User, UserRole, ServiceRequest, ServiceStatus, ServiceCategory, ServiceType, Location, ServiceConfig, Offer, SupportMessage, TrainingVideo, Shop, Product, ProductQuality, DetailedAddress, Order, OrderStatus, PaymentMode, PaymentStatus, DeliveryStatus, AdminRole, Expense, ExpenseTarget, Wallet, Transaction, IncentiveProgram, Loyalty, CombinedRole, DeliveryRequest, DeliveryRequestStatus, VehicleType, PackersMoversRequest, ShopPerformance, PartnerPerformance } from './types';
-import Header from './components/shared/Header';
-import LoginModal from './components/shared/LoginModal';
-import CustomerDashboard from './components/customer/CustomerDashboard';
-import TechnicianDashboard from './components/technician/TechnicianDashboard';
-import AdminDashboard from './components/admin/AdminDashboard';
-import { ThemeProvider } from './context/ThemeContext';
-import { LanguageProvider } from './context/LanguageContext';
-import { useTranslation } from './hooks/useTranslation';
-import ShopkeeperDashboard from './components/shopkeeper/ShopkeeperDashboard';
-import DeliveryDashboard from './components/delivery/DeliveryDashboard';
-import StaffDashboard from './components/staff/StaffDashboard';
-import NotificationSimulator from './components/shared/NotificationSimulator';
+import { User, UserRole, ServiceRequest, ServiceStatus, ServiceCategory, ServiceType, Location, ServiceConfig, Offer, SupportMessage, TrainingVideo, Shop, Product, ProductQuality, DetailedAddress, Order, OrderStatus, PaymentMode, PaymentStatus, DeliveryStatus, AdminRole, Expense, ExpenseTarget, Wallet, Transaction, IncentiveProgram, Loyalty, CombinedRole, DeliveryRequest, DeliveryRequestStatus, VehicleType, PackersMoversRequest, ShopPerformance, PartnerPerformance } from './types.ts';
+import Header from './components/shared/Header.tsx';
+import LoginModal from './components/shared/LoginModal.tsx';
+import { CustomerDashboard } from './components/customer/CustomerDashboard.tsx';
+import TechnicianDashboard from './components/technician/TechnicianDashboard.tsx';
+import AdminDashboard from './components/admin/AdminDashboard.tsx';
+import { ThemeProvider } from './context/ThemeContext.tsx';
+import { LanguageProvider } from './context/LanguageContext.tsx';
+import { useTranslation } from './hooks/useTranslation.ts';
+import ShopkeeperDashboard from './components/shopkeeper/ShopkeeperDashboard.tsx';
+import DeliveryDashboard from './components/delivery/DeliveryDashboard.tsx';
+import StaffDashboard from './components/staff/StaffDashboard.tsx';
+import NotificationSimulator from './components/shared/NotificationSimulator.tsx';
 
 const getSpecialtyPrefix = (specialty: ServiceCategory) => {
     switch (specialty) {
         case ServiceCategory.PLUMBING: return 'P';
         case ServiceCategory.ELECTRICAL: return 'E';
-        case ServiceCategory.AC_REPAIR: 'A';
+        case ServiceCategory.AC_REPAIR: return 'A';
         case ServiceCategory.GEYSER_REPAIR: return 'G';
         case ServiceCategory.TV_REPAIR: return 'V'; // for Video/TV
         case ServiceCategory.CARPENTRY: return 'C';

@@ -1,0 +1,21 @@
+{
+  "name": "Lodhi",
+  "short_name": "Lodhi",
+  "description": "Your one-stop solution for home repairs. Instantly connect with verified plumbers, electricians, and appliance technicians.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f1f5f9",
+  "theme_color": "#0D61B6",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20192%20192'%3E%3Ccircle%20cx='96'%20cy='96'%20r='96'%20fill='%23F37F21'/%3E%3Cpath%20d='M50%20152%20V%2040%20H%2068%20V%20134%20H%20110%20V%20152%20H%2050%20Z'%20fill='%230D61B6'/%3E%3C/svg%3E",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20512%20512'%3E%3Ccircle%20cx='256'%20cy='256'%20r='256'%20fill='%23F37F21'/%3E%3Cpath%20d='M133%20405%20V%20107%20H%20181%20V%20357%20H%20293%20V%20405%20H%20133%20Z'%20fill='%230D61B6'/%3E%3C/svg%3E",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}
